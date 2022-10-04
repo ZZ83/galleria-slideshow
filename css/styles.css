@@ -326,6 +326,7 @@ body {
   font-family: "Libre Baskerville", serif;
 }
 
+a,
 h1,
 h2,
 h3 {
@@ -345,6 +346,25 @@ h5 {
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.0625rem;
+}
+
+a {
+  color: hsl(0deg, 0%, 3%);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.link-one {
+  font-size: 0.5625rem;
+  line-height: 0.6875rem;
+  letter-spacing: 0.125rem;
+}
+@media (min-width: 768px) {
+  .link-one {
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.15625rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

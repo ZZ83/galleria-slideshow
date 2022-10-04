@@ -12,6 +12,7 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
+a,
 h1,
 h2,
 h3 {
@@ -31,4 +32,21 @@ h5 {
     font-weight: 400;
     font-size:   rem(13px);
     line-height: rem(17px);
+}
+
+a {
+    color: $gray;
+    text-transform:  uppercase;
+    text-decoration: none;
+}
+
+.link-one {
+    font-size:      rem(9px);
+    line-height:    rem(11px);
+    letter-spacing: rem(2px);
+    @include mq(medium) {
+        font-size:      rem(12px);
+        line-height:    rem(15px);
+        letter-spacing: rem(2.5px);
+    }
 }
