@@ -1,4 +1,0 @@
-// Convert pixes to rems
-@function rem($size) {
-    @return calc($size / 16px * 1rem);
-}
