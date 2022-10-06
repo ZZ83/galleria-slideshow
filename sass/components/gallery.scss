@@ -44,8 +44,16 @@
     &__image {
         width: 100%;
         vertical-align:text-bottom;
+        mix-blend-mode: overlay;
     }
     &__item {
-       
+        background-color: rgba(0, 0, 0, 0.3);
+        position: relative;
+        div {
+            width: 85%;
+            margin-left: 9%;
+            position: absolute;
+            bottom: rem(40px);
+        }
     }
 }

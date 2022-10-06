@@ -362,12 +362,13 @@ h2 {
   color: hsl(0deg, 0%, 100%);
   font-size: 1.5rem;
   line-height: 1.8125rem;
+  margin-bottom: 0.3125rem;
 }
 
 h5 {
-  color: #f3f3f3;
+  color: #c1c1c1;
   font-weight: 400;
-  font-size: 0.8125rem;
+  font-size: 13px;
   line-height: 1.0625rem;
 }
 
@@ -477,6 +478,17 @@ header {
 .gallery__image {
   width: 100%;
   vertical-align: text-bottom;
+  mix-blend-mode: overlay;
+}
+.gallery__item {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.gallery__item div {
+  width: 85%;
+  margin-left: 9%;
+  position: absolute;
+  bottom: 2.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
