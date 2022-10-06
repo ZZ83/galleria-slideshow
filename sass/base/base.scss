@@ -1,4 +1,4 @@
-@use '../abstracts/' as *;
+@use '../abstracts' as *;
 
 *,
 *:after,
@@ -21,6 +21,20 @@ h3 {
     font-weight: 700;
 }
 
+a {
+    color: $gray;
+    text-transform:  uppercase;
+    text-decoration: none;
+    list-style: none;
+    &:hover {
+        color: $black;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
 h2 {
     color: $white;
     font-size:   rem(24px);
@@ -34,17 +48,11 @@ h5 {
     line-height: rem(17px);
 }
 
-a {
-    color: $gray;
-    text-transform:  uppercase;
-    text-decoration: none;
-    &:hover {
-        color: $black;
-    }
-}
-
 .wrapper {
-    width: 85%;
+    width: calc(100% - rem(48px));
     margin: 0 auto;
     max-width: rem(1360px);
+    @include mq(medium) {
+        width: calc(100% - rem(80px));
+    }
 }

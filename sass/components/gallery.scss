@@ -1,0 +1,51 @@
+@use '../abstracts' as *;
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+    display: grid;
+    gap: 40px;
+}
+
+.gallery {
+    margin: rem(24px) 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(24px);
+    @include mq(medium) {
+        margin: rem(40px) 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(40px);
+    }
+    @include mq(large) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &--mobile { 
+        @include mq(medium) {
+            display: none;
+        }
+    }
+    &--tablet {
+        display: none;
+        @include mq(medium) {
+            display: grid;
+        }
+        @include mq(large) {
+            display: none;
+        }
+    }
+    &--desktop { 
+        display: none;
+        @include mq(large) {
+            display: grid;
+        }
+    }
+    &__image {
+        width: 100%;
+        vertical-align:text-bottom;
+    }
+    &__item {
+       
+    }
+}
