@@ -43,7 +43,8 @@ h2 {
 }
 
 h5 {
-    color: #c1c1c1;
+    color: $white;
+    opacity: 0.75;
     font-weight: 400;
     font-size:   13px;
     line-height: rem(17px);

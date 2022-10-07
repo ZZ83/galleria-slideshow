@@ -366,7 +366,8 @@ h2 {
 }
 
 h5 {
-  color: #c1c1c1;
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.75;
   font-weight: 400;
   font-size: 13px;
   line-height: 1.0625rem;
