@@ -41,30 +41,24 @@
             display: grid;
         }
     }
+    &__item {
+        position: relative;
+        background: $black;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 25%, transparent 50%);
+        &:hover {
+            background: rgba(255, 255, 255, 0.50);
+        }
+    }
     &__image {
         width: 100%;
         vertical-align:text-bottom;
         mix-blend-mode: overlay;
     }
-    &__item {
-        position: relative;
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 25%, transparent 50%);
-        &:hover {
-            background: rgba(255, 255, 255, 0.50);
-        }
-        
-        div {
-            width: 85%;
-            max-width: rem(246px);
-            margin-left: 9%;
-            position: absolute;
-            bottom: rem(40px);
-        }
+    &__text {
+        width: 85%;
+        max-width: rem(246px);
+        margin-left: 9%;
+        position: absolute;
+        bottom: rem(40px);
     }
 }
-
-
-
-
-// Name the text div with a class
