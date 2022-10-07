@@ -47,10 +47,11 @@
         mix-blend-mode: overlay;
     }
     &__item {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.2);
         position: relative;
         div {
             width: 85%;
+            max-width: rem(246px);
             margin-left: 9%;
             position: absolute;
             bottom: rem(40px);

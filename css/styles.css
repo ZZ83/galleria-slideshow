@@ -482,11 +482,12 @@ header {
   mix-blend-mode: overlay;
 }
 .gallery__item {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   position: relative;
 }
 .gallery__item div {
   width: 85%;
+  max-width: 15.375rem;
   margin-left: 9%;
   position: absolute;
   bottom: 2.5rem;
