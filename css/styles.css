@@ -478,7 +478,7 @@ header {
 }
 .gallery__item {
   position: relative;
-  background: hsl(0deg, 0%, 0%);
+  background-color: hsl(0deg, 0%, 0%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 25%, transparent 50%);
 }
 .gallery__item:hover {
@@ -486,7 +486,7 @@ header {
 }
 .gallery__image {
   width: 100%;
-  vertical-align: text-bottom;
+  height: 100%;
   mix-blend-mode: overlay;
 }
 .gallery__text {
