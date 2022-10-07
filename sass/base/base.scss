@@ -35,11 +35,27 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-size:   rem(24px);
+    line-height: rem(29px);
+    @include mq(medium) {
+        width: rem(200px);
+        font-size:   rem(56px);
+        line-height: rem(64px);
+    }
+}
+
 h2 {
     color: $white;
     font-size:   rem(24px);
     line-height: rem(29px);
     margin-bottom: rem(5px);
+}
+
+h4 {
+    color: $gray;
+    font-size:   rem(15px);
+    line-height: rem(19px);
 }
 
 h5 {
@@ -48,6 +64,16 @@ h5 {
     font-weight: 400;
     font-size:   13px;
     line-height: rem(17px);
+}
+
+strong {
+    color: $lightergray;
+    font-size:   rem(100px);
+    line-height: rem(100px);
+    @include mq(medium) {
+        font-size:   rem(200px);
+        line-height: rem(150px);
+    }
 }
 
 .wrapper {

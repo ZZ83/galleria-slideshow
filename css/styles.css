@@ -358,11 +358,29 @@ ul {
   list-style-type: none;
 }
 
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    width: 12.5rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+}
+
 h2 {
   color: hsl(0deg, 0%, 100%);
   font-size: 1.5rem;
   line-height: 1.8125rem;
   margin-bottom: 0.3125rem;
+}
+
+h4 {
+  color: hsl(0deg, 0%, 49%);
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
 }
 
 h5 {
@@ -371,6 +389,18 @@ h5 {
   font-weight: 400;
   font-size: 13px;
   line-height: 1.0625rem;
+}
+
+strong {
+  color: hsl(0deg, 0%, 95%);
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+}
+@media (min-width: 768px) {
+  strong {
+    font-size: 12.5rem;
+    line-height: 9.375rem;
+  }
 }
 
 .wrapper {
