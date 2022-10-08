@@ -39,8 +39,11 @@ ul {
 h1 {
     font-size:   rem(24px);
     line-height: rem(29px);
+    margin-bottom: rem(8px);
     @include mq(medium) {
         width: rem(200px);
+        margin-top: 1.5%;
+        margin-bottom: rem(24px);
         font-size:   rem(56px);
         line-height: rem(64px);
     }

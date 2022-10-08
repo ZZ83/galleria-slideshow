@@ -366,10 +366,13 @@ ul {
 h1 {
   font-size: 1.5rem;
   line-height: 1.8125rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   h1 {
     width: 12.5rem;
+    margin-top: 1.5%;
+    margin-bottom: 1.5rem;
     font-size: 3.5rem;
     line-height: 4rem;
   }
@@ -541,6 +544,11 @@ header {
 }
 @media (min-width: 768px) {
   .artist__painting {
+    width: 69%;
+  }
+}
+@media (min-width: 1360px) {
+  .artist__painting {
     width: 29.6875rem;
   }
 }
@@ -554,13 +562,25 @@ header {
   line-height: 0.75rem;
   letter-spacing: 0.13375rem;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5%;
+  left: 5%;
   background-color: rgba(0, 0, 0, 0.75);
   border: none;
 }
 .artist__button:hover {
   background-color: rgba(255, 255, 255, 0.25);
+}
+@media (min-width: 768px) {
+  .artist__button {
+    top: auto;
+    left: 1rem;
+    bottom: 1rem;
+  }
+}
+@media (min-width: 1360px) {
+  .artist__button {
+    bottom: 5rem;
+  }
 }
 .artist__button::before {
   padding-top: 0.125rem;
@@ -569,21 +589,84 @@ header {
 .artist__text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5rem;
-  width: 85.6%;
-  max-width: 17.5rem;
+  justify-content: center;
+  padding-left: 1.5rem;
+  width: 17.5rem;
   height: 6.5rem;
   background-color: hsl(0deg, 0%, 100%);
-  bottom: -3.4375rem;
+  bottom: -3.375rem;
   position: absolute;
-  display: none;
+}
+@media (min-width: 768px) {
+  .artist__text {
+    width: 66%;
+    height: 43%;
+    padding-left: 4.0625rem;
+    top: 0;
+    right: 0;
+    justify-content: start;
+  }
+}
+@media (min-width: 1360px) {
+  .artist__text {
+    width: 27.8125rem;
+  }
 }
 .artist__image {
-  display: none;
+  width: 4rem;
+  height: 4rem;
   left: 1.8125rem;
-  bottom: -11.4375rem;
+  bottom: -7.375rem;
   position: absolute;
+}
+@media (min-width: 768px) {
+  .artist__image {
+    top: 43%;
+    left: auto;
+    right: 8%;
+    bottom: auto;
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media (min-width: 1360px) {
+  .artist__image {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .details {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  .details {
+    flex-direction: row;
+    height: 39rem;
+    margin-top: 6.25rem;
+  }
+}
+
+@media (min-width: 1360px) {
+  .artist {
+    width: 63%;
+  }
+}
+
+.info {
+  margin-top: 10rem;
+}
+@media (min-width: 1360px) {
+  .info {
+    width: 37%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

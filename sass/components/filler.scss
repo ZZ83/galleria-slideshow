@@ -7,6 +7,9 @@
         width: 100%;
         vertical-align: middle;
         @include mq(medium) {
+            width: 69%;
+        }
+        @include mq(large) {
             width: rem(475px);
         }
     }
@@ -21,18 +24,23 @@
         line-height:    rem(12px);
         letter-spacing: rem(2.14px);
         position: absolute;
-
-        top:  0;
-        left: 0;
-
+        top:  5%;
+        left: 5%;
         background-color: rgba(0, 0, 0, 0.75);
         border: none;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
         @extend %flex;
         @extend %flex-ai-c;
         @extend %flex-jc-sa;
-
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.25);
+        @include mq(medium) {
+            top: auto;
+            left:    1rem;
+            bottom:  1rem;
+        }
+        @include mq(large) {
+            bottom:  rem(80px);
         }
     }
 
@@ -42,46 +50,79 @@
     }
 
     &__text {
-      
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        padding: rem(24px);
-        width: 85.6%;
-        max-width: rem(280px);
+        justify-content: center;
+        padding-left: rem(24px);
+        width: rem(280px);
         height: rem(104px);
         background-color: $white;
-        bottom: rem(-55px);
+        bottom: rem(-54px);
         position: absolute;
-
-
-        display: none;
+        @include mq(medium) {
+            width:  66%;
+            height: 43%;
+            padding-left: rem(65px);
+            top:   0;
+            right: 0;
+            justify-content: start;
+        }
+        @include mq(large) {
+            width:  rem(445px);
+          
+        }
     }
 
     &__image  {
-        display: none;
-        left: rem(29px);
-        bottom: rem(-183px);
+        width:  rem(64px);
+        height: rem(64px);
+        left:   rem(29px);
+        bottom: rem(-118px);
         position: absolute;
+        @include mq(medium) {
+            top: 43%;
+            left: auto;
+            right: 8%;
+            bottom: auto;
+            width:  rem(128px);
+            height: rem(128px);
+        }
+
+        @include mq(large) {
+            top: auto;
+            bottom: 0;
+        }
         
     }
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-   
- 
- 
 }
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(24px);
+   
+    @include mq(medium) {
+        margin-top: rem(40px);
+    }
+    @include mq(large) {
+        flex-direction: row;
+        height: rem(624px);
+        margin-top: rem(100px);
+    }
+}
+
+
+.artist {
+    @include mq(large) {
+        width: 63%;
+    }
+}
+
+.info {
+    margin-top: 10rem;
+    @include mq(large) {
+        width: 37%;
+    }
+}
+
+//24/ 40 100
