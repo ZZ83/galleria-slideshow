@@ -311,16 +311,20 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-header {
+.artist__button, header {
   display: flex;
 }
 
-header {
+.artist__button, header {
   align-items: center;
 }
 
 header {
   justify-content: space-between;
+}
+
+.artist__button {
+  justify-content: space-around;
 }
 
 *,
@@ -338,7 +342,8 @@ body {
 a,
 h1,
 h2,
-h3 {
+h3,
+button {
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -525,6 +530,60 @@ header {
   margin-left: 9%;
   position: absolute;
   bottom: 2rem;
+}
+
+.artist {
+  position: relative;
+}
+.artist__painting {
+  width: 100%;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .artist__painting {
+    width: 29.6875rem;
+  }
+}
+.artist__button {
+  color: hsl(0deg, 0%, 100%);
+  width: 9.5rem;
+  height: 2.5rem;
+  padding: 0.1875rem 0 0 0.125rem;
+  cursor: pointer;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.13375rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+}
+.artist__button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.artist__button::before {
+  padding-top: 0.125rem;
+  content: url(../assets/shared/icon-view-image.svg);
+}
+.artist__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+  width: 85.6%;
+  max-width: 17.5rem;
+  height: 6.5rem;
+  background-color: hsl(0deg, 0%, 100%);
+  bottom: -3.4375rem;
+  position: absolute;
+  display: none;
+}
+.artist__image {
+  display: none;
+  left: 1.8125rem;
+  bottom: -11.4375rem;
+  position: absolute;
 }
 
 /*# sourceMappingURL=styles.css.map */

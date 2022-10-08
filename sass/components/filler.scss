@@ -1,0 +1,87 @@
+@use '../abstracts' as *;
+
+.artist {
+    position: relative;
+
+    &__painting {
+        width: 100%;
+        vertical-align: middle;
+        @include mq(medium) {
+            width: rem(475px);
+        }
+    }
+
+    &__button {
+        color: $white;
+        width: rem(152px);
+        height: rem(40px);
+        padding: rem(3px) 0 0 rem(2px);
+        cursor: pointer;
+        font-size:      rem(10px);
+        line-height:    rem(12px);
+        letter-spacing: rem(2.14px);
+        position: absolute;
+
+        top:  0;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, 0.75);
+        border: none;
+        @extend %flex;
+        @extend %flex-ai-c;
+        @extend %flex-jc-sa;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+    }
+
+    &__button::before {
+        padding-top: rem(2px);
+        content: url(../assets/shared/icon-view-image.svg);
+    }
+
+    &__text {
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: rem(24px);
+        width: 85.6%;
+        max-width: rem(280px);
+        height: rem(104px);
+        background-color: $white;
+        bottom: rem(-55px);
+        position: absolute;
+
+
+        display: none;
+    }
+
+    &__image  {
+        display: none;
+        left: rem(29px);
+        bottom: rem(-183px);
+        position: absolute;
+        
+    }
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+   
+ 
+ 
+}
