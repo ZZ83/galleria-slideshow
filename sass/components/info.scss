@@ -2,28 +2,43 @@
 
 
 .info {
+    margin-top: rem(165px);
+    margin-bottom: rem(67px);
     position: relative;
-    margin-top: rem(170px);
-    background-color: blue;
+    @include mq(medium) {
+        margin-bottom: rem(54px);
+    }
     @include mq(large) {
         width: 37%;
+        margin-bottom: rem(75px);
     }
-    strong {  
+    &__inner {
+        margin: 0 auto;
+        @include mq(medium) {
+            max-width: rem(457px);
+        }
+        @include mq(large) {
+            margin: initial;
+        }
+    }
+    &__display {  
         z-index: -1;
         text-align: right;
-        margin-top: rem(-80px);
+        margin-top: rem(-75px);
+        position: absolute;
         top:  0;
         left: rem(100px);
-        position: absolute;
         @include mq(medium) {
             left: 0;
         }
     }
-    p {
-        display: block;
-        background-color: orange;
-        margin: 0 auto;
-        max-width: rem(457px);
+    &__text {
+        @include mq(medium) {
+            margin-top: rem(20px);
+        }
+        @include mq(large) {
+            margin-top: rem(40px);
+        }
     }
 }
 
