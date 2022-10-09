@@ -13,6 +13,7 @@ body {
 }
 
 a,
+p,
 h1,
 h2,
 h3,
@@ -30,6 +31,12 @@ a {
     &:hover {
         color: $black;
     }
+}
+
+p {
+    color: $gray;
+    font-size:  rem(14px);
+    list-style: rem(28px);
 }
 
 ul {

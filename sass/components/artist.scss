@@ -2,7 +2,9 @@
 
 .artist {
     position: relative;
-
+    @include mq(large) {
+        width: 63%;
+    }
     &__painting {
         width: 100%;
         vertical-align: middle;
@@ -13,7 +15,6 @@
             width: rem(475px);
         }
     }
-
     &__button {
         color: $white;
         width: rem(152px);
@@ -43,22 +44,21 @@
             bottom:  rem(80px);
         }
     }
-
     &__button::before {
         padding-top: rem(2px);
         content: url(../assets/shared/icon-view-image.svg);
     }
-
     &__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: rem(24px);
-        width: rem(280px);
+        width: 85%;
+        max-width: rem(280px);
         height: rem(104px);
+        padding-left: rem(24px);
         background-color: $white;
-        bottom: rem(-54px);
         position: absolute;
+        bottom: rem(-54px);
+        @extend %flex;
+        @extend %flex-d-c;
+        @extend %flex-jc-c;
         @include mq(medium) {
             width:  66%;
             height: 43%;
@@ -69,60 +69,25 @@
         }
         @include mq(large) {
             width:  rem(445px);
-          
         }
     }
-
     &__image  {
         width:  rem(64px);
         height: rem(64px);
-        left:   rem(29px);
-        bottom: rem(-118px);
         position: absolute;
+        left:   1rem;
+        bottom: rem(-118px);
         @include mq(medium) {
-            top: 43%;
-            left: auto;
-            right: 8%;
-            bottom: auto;
             width:  rem(128px);
             height: rem(128px);
+            top: 43%;
+            right: 8%;
+            left: initial;
+            bottom: initial;
         }
-
         @include mq(large) {
             top: auto;
             bottom: 0;
         }
-        
     }
 }
-
-.details {
-    display: flex;
-    flex-direction: column;
-    margin-top: rem(24px);
-   
-    @include mq(medium) {
-        margin-top: rem(40px);
-    }
-    @include mq(large) {
-        flex-direction: row;
-        height: rem(624px);
-        margin-top: rem(100px);
-    }
-}
-
-
-.artist {
-    @include mq(large) {
-        width: 63%;
-    }
-}
-
-.info {
-    margin-top: 10rem;
-    @include mq(large) {
-        width: 37%;
-    }
-}
-
-//24/ 40 100

@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+
+.info {
+    position: relative;
+    margin-top: rem(170px);
+    background-color: blue;
+    @include mq(large) {
+        width: 37%;
+    }
+    strong {  
+        z-index: -1;
+        text-align: right;
+        margin-top: rem(-80px);
+        top:  0;
+        left: rem(100px);
+        position: absolute;
+        @include mq(medium) {
+            left: 0;
+        }
+    }
+    p {
+        display: block;
+        background-color: orange;
+        margin: 0 auto;
+        max-width: rem(457px);
+    }
+}
+
