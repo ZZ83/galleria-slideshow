@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.footer {
+    // background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: rem(72px);
+    @include mq(medium) {
+        height: rem(px);
+    }
+    h5 {
+        color: $black;
+    }
+}
+
+
+
+
+
+.bar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    border-top: 1px solid $lightgray;
+    &__progress {
+        width: 8%;
+        position: absolute;
+        top: -1px;
+        border-top: 1px solid $black;
+    }
+}
+
+
+
+
