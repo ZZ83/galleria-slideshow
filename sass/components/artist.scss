@@ -15,39 +15,6 @@
             width: rem(475px);
         }
     }
-    &__button {
-        color: $white;
-        width: rem(152px);
-        height: rem(40px);
-        padding: rem(3px) 0 0 rem(2px);
-        cursor: pointer;
-        font-size:      rem(10px);
-        line-height:    rem(12px);
-        letter-spacing: rem(2.14px);
-        position: absolute;
-        top:  5%;
-        left: 5%;
-        background-color: rgba(0, 0, 0, 0.75);
-        border: none;
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.25);
-        }
-        @extend %flex;
-        @extend %flex-ai-c;
-        @extend %flex-jc-sa;
-        @include mq(medium) {
-            top: auto;
-            left:    1rem;
-            bottom:  1rem;
-        }
-        @include mq(large) {
-            bottom:  rem(80px);
-        }
-    }
-    &__button::before {
-        padding-top: rem(2px);
-        content: url(../assets/shared/icon-view-image.svg);
-    }
     &__text {
         width: 85%;
         // max-width: rem(280px);

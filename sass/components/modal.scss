@@ -5,40 +5,17 @@
     height: 100%;
     position:   fixed;
     background-color: rgba(0, 0, 0, 0.85);
-
     @extend %flex-center;
     &__inner {
-        background-color: orange;
         display: flex;
         flex-direction: column;
         width: 85%;
        
     }
-    &__close {
-        color: $white;
-        cursor: pointer;
-        width:  rem(68px);
-        height: rem(17px);
-        font-size:      rem(14px);
-        line-height:    rem(17px);
-        letter-spacing: rem(3px);
-        text-transform: uppercase;
-        background: none;
-        border: none;
-        margin-left: auto;
-        margin-bottom: rem(33px);
-        @include mq(medium) {
-            margin-bottom: rem(41px);
-        }
-        &:hover {
-            color: $gray;
-        }
-    }
     &__image {
        width: 100%;
        margin: 0 auto;
     }
-
     &__inner--starry,
     &__image--starry {
         max-width: rem(917px);
