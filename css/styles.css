@@ -766,10 +766,25 @@ header {
   }
 }
 
+.progress {
+  width: 100%;
+  position: relative;
+  top: 0;
+  border-top: 1px solid hsl(0deg, 0%, 90%);
+}
+.progress__bar {
+  position: absolute;
+  top: -1px;
+  border-top: 1px solid hsl(0deg, 0%, 0%);
+}
+.progress__bar--starry {
+  width: 6.6666666667%;
+}
+
 .footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   height: 4.5rem;
 }
@@ -778,21 +793,9 @@ header {
     height: calc(px / 16px * 1rem);
   }
 }
-.footer h5 {
+.footer h6 {
+  margin-top: 9px;
   color: hsl(0deg, 0%, 0%);
-}
-
-.bar {
-  width: 100%;
-  position: relative;
-  top: 0;
-  border-top: 1px solid hsl(0deg, 0%, 90%);
-}
-.bar__progress {
-  width: 8%;
-  position: absolute;
-  top: -1px;
-  border-top: 1px solid hsl(0deg, 0%, 0%);
 }
 
 .slideshow-nav {
@@ -805,25 +808,21 @@ header {
     width: 5.625rem;
   }
 }
-.slideshow-nav a,
-.slideshow-nav svg {
+.slideshow-nav__link {
   width: 1rem;
   height: 1rem;
 }
 @media (min-width: 768px) {
-  .slideshow-nav a,
-.slideshow-nav svg {
+  .slideshow-nav__link {
     width: 1.625rem;
     height: 1.5rem;
   }
 }
-.slideshow-nav a:hover,
-.slideshow-nav svg:hover {
-  stroke: hsl(0deg, 0%, 49%);
-}
-.slideshow-nav svg {
+.slideshow-nav__back, .slideshow-nav__next {
   stroke: hsl(0deg, 0%, 0%);
-  pointer-events: none;
+}
+.slideshow-nav__back:hover, .slideshow-nav__next:hover {
+  stroke: hsl(0deg, 0%, 49%);
 }
 
 /*# sourceMappingURL=styles.css.map */
