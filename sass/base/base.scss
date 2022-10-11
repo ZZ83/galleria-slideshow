@@ -8,7 +8,16 @@
     box-sizing: border-box;
 }
 
+html,
 body {
+    height: 100%;
+    max-height: rem(1120px);
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     font-family: 'Libre Baskerville', serif;
 }
 
