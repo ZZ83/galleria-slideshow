@@ -1,9 +1,13 @@
 @use '../abstracts' as *;
 
+.source-link,
 .slideshow-link {
     font-size:      rem(9px);
     line-height:    rem(11px);
     letter-spacing: rem(2px);
+}
+
+.slideshow-link {
     @include mq(medium) {
         font-size:      rem(12px);
         line-height:    rem(15px);
@@ -13,11 +17,8 @@
 
 .source-link {
     display: block;
-    font-size:      rem(9px);
-    line-height:    rem(11px);
-    letter-spacing: rem(2px);
-    text-decoration-line: underline;
     margin-top: rem(68px);
+    text-decoration-line: underline;
     @include mq(medium) {
         margin-bottom: rem(49px);
     }

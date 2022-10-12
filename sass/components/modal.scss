@@ -7,10 +7,8 @@
     background-color: rgba(0, 0, 0, 0.85);
     @extend %flex-center;
     &__inner {
-        display: flex;
-        flex-direction: column;
         width: 85%;
-       
+        text-align: right;
     }
     &__image {
        width: 100%;

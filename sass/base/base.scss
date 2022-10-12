@@ -11,7 +11,7 @@
 html,
 body {
     height: 100%;
-    max-height: rem(1120px);
+    max-height: rem(1400px);
 }
 
 body {
@@ -32,6 +32,10 @@ button {
     font-weight: 700;
 }
 
+ul {
+    list-style-type: none;
+}
+
 a {
     color: $gray;
     text-transform:  uppercase;
@@ -46,10 +50,6 @@ p {
     color: $gray;
     font-size:   rem(14px);
     line-height: rem(28px);
-}
-
-ul {
-    list-style-type: none;
 }
 
 h1 {
@@ -97,6 +97,7 @@ h5 {
 h6 {
     color: $black;
     opacity: 0.75;
+    margin-top: 9px;
     font-weight: 400;
     font-size:   rem(10px);
     line-height: rem(12px); 

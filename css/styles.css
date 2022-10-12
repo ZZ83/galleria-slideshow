@@ -311,15 +311,15 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-.open-button, .details, .artist__text, header {
+.open-button, .slideshow-nav, footer, .details, .artist__text, header {
   display: flex;
 }
 
-.open-button, header {
+.open-button, footer, header {
   align-items: center;
 }
 
-header {
+.slideshow-nav, footer, header {
   justify-content: space-between;
 }
 
@@ -352,7 +352,7 @@ header {
 html,
 body {
   height: 100%;
-  max-height: 70rem;
+  max-height: 87.5rem;
 }
 
 body {
@@ -373,6 +373,10 @@ button {
   font-weight: 700;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   color: hsl(0deg, 0%, 49%);
   text-transform: uppercase;
@@ -387,10 +391,6 @@ p {
   color: hsl(0deg, 0%, 49%);
   font-size: 0.875rem;
   line-height: 1.75rem;
-}
-
-ul {
-  list-style-type: none;
 }
 
 h1 {
@@ -442,6 +442,7 @@ h5 {
 h6 {
   color: hsl(0deg, 0%, 0%);
   opacity: 0.75;
+  margin-top: 9px;
   font-weight: 400;
   font-size: 0.625rem;
   line-height: 0.75rem;
@@ -487,11 +488,13 @@ strong {
   }
 }
 
+.source-link,
 .slideshow-link {
   font-size: 0.5625rem;
   line-height: 0.6875rem;
   letter-spacing: 0.125rem;
 }
+
 @media (min-width: 768px) {
   .slideshow-link {
     font-size: 0.75rem;
@@ -502,11 +505,8 @@ strong {
 
 .source-link {
   display: block;
-  font-size: 0.5625rem;
-  line-height: 0.6875rem;
-  letter-spacing: 0.125rem;
-  text-decoration-line: underline;
   margin-top: 4.25rem;
+  text-decoration-line: underline;
 }
 @media (min-width: 768px) {
   .source-link {
@@ -526,9 +526,8 @@ strong {
   background-color: rgba(0, 0, 0, 0.85);
 }
 .modal__inner {
-  display: flex;
-  flex-direction: column;
   width: 85%;
+  text-align: right;
 }
 .modal__image {
   width: 100%;
@@ -652,6 +651,7 @@ header {
 .artist__text {
   width: 85%;
   height: 6.5rem;
+  margin-left: -0.0625rem;
   padding-left: 1.5rem;
   background-color: hsl(0deg, 0%, 100%);
   position: absolute;
@@ -661,6 +661,7 @@ header {
   .artist__text {
     width: 66%;
     height: 43%;
+    margin-left: 0;
     padding-left: 4.0625rem;
     top: 0;
     right: 0;
@@ -782,27 +783,18 @@ header {
   width: 6.6666666667%;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
+footer {
   height: 4.5rem;
+  position: relative;
 }
 @media (min-width: 768px) {
-  .footer {
-    height: calc(px / 16px * 1rem);
+  footer {
+    height: 5.9375rem;
   }
-}
-.footer h6 {
-  margin-top: 9px;
-  color: hsl(0deg, 0%, 0%);
 }
 
 .slideshow-nav {
   width: 3.5625rem;
-  display: flex;
-  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .slideshow-nav {

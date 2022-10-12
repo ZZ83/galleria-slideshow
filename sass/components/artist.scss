@@ -17,8 +17,8 @@
     }
     &__text {
         width: 85%;
-        // max-width: rem(280px);
         height: rem(104px);
+        margin-left: rem(-1px);
         padding-left: rem(24px);
         background-color: $white;
         position: absolute;
@@ -29,6 +29,7 @@
         @include mq(medium) {
             width:  66%;
             height: 43%;
+            margin-left: 0;
             padding-left: rem(65px);
             top:   0;
             right: 0;
