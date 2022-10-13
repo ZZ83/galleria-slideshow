@@ -57,9 +57,7 @@ h1 {
     line-height: rem(29px);
     margin-bottom: rem(8px);
     @include mq(medium) {
-        width: rem(200px);
-        margin-top: 1.5%;
-        margin-bottom: rem(24px);
+        margin-bottom: rem(26px);
         font-size:   rem(56px);
         line-height: rem(64px);
     }

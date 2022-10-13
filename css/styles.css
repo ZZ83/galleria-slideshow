@@ -311,7 +311,7 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-.open-button, .slideshow-nav, footer, .details, .artist__text, header {
+.name, .open-button, .slideshow-nav, footer, .details, header {
   display: flex;
 }
 
@@ -327,11 +327,7 @@ template {
   justify-content: space-around;
 }
 
-.artist__text {
-  justify-content: center;
-}
-
-.details, .artist__text {
+.name, .details {
   flex-direction: column;
 }
 
@@ -400,9 +396,7 @@ h1 {
 }
 @media (min-width: 768px) {
   h1 {
-    width: 12.5rem;
-    margin-top: 1.5%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.625rem;
     font-size: 3.5rem;
     line-height: 4rem;
   }
@@ -648,54 +642,6 @@ header {
     width: 29.6875rem;
   }
 }
-.artist__text {
-  width: 85%;
-  height: 6.5rem;
-  margin-left: -0.0625rem;
-  padding-left: 1.5rem;
-  background-color: hsl(0deg, 0%, 100%);
-  position: absolute;
-  bottom: -3.375rem;
-}
-@media (min-width: 768px) {
-  .artist__text {
-    width: 66%;
-    height: 43%;
-    margin-left: 0;
-    padding-left: 4.0625rem;
-    top: 0;
-    right: 0;
-    justify-content: start;
-  }
-}
-@media (min-width: 1360px) {
-  .artist__text {
-    width: 27.8125rem;
-  }
-}
-.artist__image {
-  width: 4rem;
-  height: 4rem;
-  position: absolute;
-  left: 1rem;
-  bottom: -7.375rem;
-}
-@media (min-width: 768px) {
-  .artist__image {
-    width: 8rem;
-    height: 8rem;
-    top: 43%;
-    right: 8%;
-    left: initial;
-    bottom: initial;
-  }
-}
-@media (min-width: 1360px) {
-  .artist__image {
-    top: auto;
-    bottom: 0;
-  }
-}
 
 .info {
   margin-top: 10.3125rem;
@@ -729,24 +675,34 @@ header {
 .info__display {
   z-index: -1;
   text-align: right;
-  margin-top: -4.6875rem;
+  margin-top: -11.75rem;
   position: absolute;
   top: 0;
-  left: 6.25rem;
+  left: 5.625rem;
 }
 @media (min-width: 768px) {
   .info__display {
     left: 0;
+    margin-top: -6.5625rem;
   }
+}
+@media (min-width: 1360px) {
+  .info__display {
+    margin-top: -10.25rem;
+  }
+}
+.info__text {
+  margin-top: -7.1875rem;
 }
 @media (min-width: 768px) {
   .info__text {
-    margin-top: 1.25rem;
+    margin-top: -1.5625rem;
   }
 }
 @media (min-width: 1360px) {
   .info__text {
-    margin-top: 2.5rem;
+    max-width: 21.875rem;
+    margin-top: -3.1875rem;
   }
 }
 
@@ -877,6 +833,68 @@ footer {
 }
 .close-button:hover {
   color: hsl(0deg, 0%, 49%);
+}
+
+.name {
+  width: 85%;
+}
+@media (min-width: 768px) {
+  .name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 66%;
+  }
+}
+@media (min-width: 1360px) {
+  .name {
+    width: 27.8125rem;
+    height: 100%;
+  }
+}
+.name__text {
+  padding: 5%;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  .name__text {
+    padding: 0 0 4.0625rem 4.0625rem;
+  }
+}
+.name__text--50 {
+  margin-top: -3.125rem;
+}
+@media (min-width: 768px) {
+  .name__text--50 {
+    margin-top: 0;
+  }
+}
+.name__text--79 {
+  margin-top: -4.9375rem;
+}
+@media (min-width: 768px) {
+  .name__text--79 {
+    margin-top: 0;
+  }
+}
+.name__image {
+  width: 4rem;
+  height: 4rem;
+}
+@media (min-width: 768px) {
+  .name__image {
+    width: 8rem;
+    height: 8rem;
+    margin-left: auto;
+    margin-right: 8%;
+  }
+}
+@media (min-width: 1360px) {
+  .name__image {
+    position: absolute;
+    bottom: 0;
+    right: 11.5625rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -15,47 +15,6 @@
             width: rem(475px);
         }
     }
-    &__text {
-        width: 85%;
-        height: rem(104px);
-        margin-left: rem(-1px);
-        padding-left: rem(24px);
-        background-color: $white;
-        position: absolute;
-        bottom: rem(-54px);
-        @extend %flex;
-        @extend %flex-d-c;
-        @extend %flex-jc-c;
-        @include mq(medium) {
-            width:  66%;
-            height: 43%;
-            margin-left: 0;
-            padding-left: rem(65px);
-            top:   0;
-            right: 0;
-            justify-content: start;
-        }
-        @include mq(large) {
-            width:  rem(445px);
-        }
-    }
-    &__image  {
-        width:  rem(64px);
-        height: rem(64px);
-        position: absolute;
-        left:   1rem;
-        bottom: rem(-118px);
-        @include mq(medium) {
-            width:  rem(128px);
-            height: rem(128px);
-            top: 43%;
-            right: 8%;
-            left: initial;
-            bottom: initial;
-        }
-        @include mq(large) {
-            top: auto;
-            bottom: 0;
-        }
-    }
 }
+
+
