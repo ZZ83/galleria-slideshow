@@ -530,6 +530,9 @@ strong {
 .modal__inner--starry, .modal__image--starry {
   max-width: 57.3125rem;
 }
+.modal__inner--girl, .modal__image--girl {
+  max-width: 32.4375rem;
+}
 
 header {
   height: 4.9375rem;
@@ -737,6 +740,9 @@ header {
 }
 .progress__bar--starry {
   width: 6.6666666667%;
+}
+.progress__bar--girl {
+  width: 13.3333333333%;
 }
 
 footer {
