@@ -860,7 +860,7 @@ footer {
 }
 .name__text {
   padding: 5%;
-  background-color: white;
+  background-color: hsl(0deg, 0%, 100%);
 }
 @media (min-width: 768px) {
   .name__text {
@@ -900,6 +900,18 @@ footer {
     position: absolute;
     bottom: 0;
     right: 11.5625rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .starry-heading {
+    width: 12.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .girl-heading {
+    width: 25rem;
   }
 }
 

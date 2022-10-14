@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.starry-heading {
+    @include mq(medium) {
+        width: rem(200px);
+    }
+}
+
+.girl-heading {
+    @include mq(medium) {
+        width: rem(400px);
+    }   
+}

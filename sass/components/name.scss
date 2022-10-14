@@ -16,7 +16,7 @@
     }
     &__text {
         padding: 5%;
-        background-color: white;
+        background-color: $white;
         @include mq(medium) {
             padding: 0  0 rem(65px) rem(65px);
         } 
