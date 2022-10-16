@@ -680,11 +680,10 @@ header {
 }
 .info__display {
   z-index: -1;
-  text-align: right;
   margin-top: -11.75rem;
   position: absolute;
   top: 0;
-  left: 5.625rem;
+  right: 0;
 }
 @media (min-width: 768px) {
   .info__display {
