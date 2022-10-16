@@ -536,6 +536,9 @@ strong {
 .modal__inner--guernica, .modal__image--guernica {
   max-width: 78.3125rem;
 }
+.modal__inner--magdalene, .modal__image--magdalene {
+  max-width: 35.8125rem;
+}
 
 header {
   height: 4.9375rem;
@@ -748,6 +751,9 @@ header {
 }
 .progress__bar--guernica {
   width: 20%;
+}
+.progress__bar--magdalene {
+  width: 26.6666666667%;
 }
 
 footer {
