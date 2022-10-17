@@ -542,6 +542,9 @@ strong {
 .modal__inner--storm, .modal__image--storm {
   max-width: 37.3125rem;
 }
+.modal__inner--great-wave, .modal__image--great-wave {
+  max-width: 41.875rem;
+}
 
 header {
   height: 4.9375rem;
@@ -760,6 +763,9 @@ header {
 }
 .progress__bar--storm {
   width: 33.3333333333%;
+}
+.progress__bar--great-wave {
+  width: 40%;
 }
 
 footer {
