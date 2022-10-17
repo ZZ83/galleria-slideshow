@@ -11,3 +11,11 @@
         width: rem(400px);
     }   
 }
+
+.storm-heading {
+    width: 90%;
+    max-width: rem(225px);
+    @include mq(medium) {
+        max-width: rem(350px);
+    }   
+}

@@ -520,7 +520,7 @@ strong {
   background-color: rgba(0, 0, 0, 0.85);
 }
 .modal__inner {
-  width: 85%;
+  width: calc(100% - 3rem);
   text-align: right;
 }
 .modal__image {
@@ -538,6 +538,9 @@ strong {
 }
 .modal__inner--magdalene, .modal__image--magdalene {
   max-width: 35.8125rem;
+}
+.modal__inner--storm, .modal__image--storm {
+  max-width: 37.3125rem;
 }
 
 header {
@@ -755,6 +758,9 @@ header {
 .progress__bar--magdalene {
   width: 26.6666666667%;
 }
+.progress__bar--storm {
+  width: 33.3333333333%;
+}
 
 footer {
   height: 4.5rem;
@@ -924,6 +930,16 @@ footer {
 @media (min-width: 768px) {
   .girl-heading {
     width: 25rem;
+  }
+}
+
+.storm-heading {
+  width: 90%;
+  max-width: 14.0625rem;
+}
+@media (min-width: 768px) {
+  .storm-heading {
+    max-width: 21.875rem;
   }
 }
 
