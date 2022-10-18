@@ -553,6 +553,9 @@ strong {
 .modal__inner--gypsy, .modal__image--gypsy {
   max-width: 69.1875rem;
 }
+.modal__inner--lady, .modal__image--lady {
+  max-width: 33.5625rem;
+}
 
 header {
   height: 4.9375rem;
@@ -781,6 +784,9 @@ header {
 .progress__bar--gypsy {
   width: 53.3333333333%;
 }
+.progress__bar--lady {
+  width: 60%;
+}
 
 footer {
   height: 4.5rem;
@@ -960,6 +966,17 @@ footer {
 @media (min-width: 768px) {
   .storm-heading {
     max-width: 21.875rem;
+  }
+}
+
+.lady-heading {
+  width: 90%;
+  max-width: 10.9375rem;
+}
+@media (min-width: 768px) {
+  .lady-heading {
+    width: 100%;
+    max-width: 23.75rem;
   }
 }
 
