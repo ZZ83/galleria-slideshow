@@ -523,6 +523,11 @@ strong {
   width: calc(100% - 3rem);
   text-align: right;
 }
+@media (min-width: 768px) {
+  .modal__inner {
+    width: calc(100% - 5rem);
+  }
+}
 .modal__image {
   width: 100%;
   margin: 0 auto;
@@ -544,6 +549,9 @@ strong {
 }
 .modal__inner--great-wave, .modal__image--great-wave {
   max-width: 41.875rem;
+}
+.modal__inner--gypsy, .modal__image--gypsy {
+  max-width: 69.1875rem;
 }
 
 header {
@@ -769,6 +777,9 @@ header {
 }
 .progress__bar--van-gogh {
   width: 46.6666666667%;
+}
+.progress__bar--gypsy {
+  width: 53.3333333333%;
 }
 
 footer {

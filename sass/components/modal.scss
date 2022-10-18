@@ -9,6 +9,9 @@
     &__inner {
         width: calc(100% - rem(48px));
         text-align: right;
+        @include mq(medium) {
+            width: calc(100% - rem(80px));
+        }
     }
     &__image {
        width: 100%;
@@ -42,4 +45,11 @@
     &__image--great-wave {
         max-width: rem(670px);
     }
+
+    &__inner--gypsy,
+    &__image--gypsy {
+        max-width: rem(1107px);
+    }
+
+    
 }
