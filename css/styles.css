@@ -767,6 +767,9 @@ header {
 .progress__bar--great-wave {
   width: 40%;
 }
+.progress__bar--van-gogh {
+  width: 46.6666666667%;
+}
 
 footer {
   height: 4.5rem;
