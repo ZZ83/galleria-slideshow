@@ -1010,4 +1010,15 @@ footer {
   }
 }
 
+.boy-heading {
+  width: 90%;
+  max-width: 12.5rem;
+}
+@media (min-width: 768px) {
+  .boy-heading {
+    width: 100%;
+    max-width: 23.75rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
