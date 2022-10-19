@@ -548,13 +548,16 @@ strong {
   max-width: 37.3125rem;
 }
 .modal__inner--great-wave, .modal__image--great-wave {
-  max-width: 41.875rem;
+  max-width: 50.5625rem;
 }
 .modal__inner--gypsy, .modal__image--gypsy {
   max-width: 69.1875rem;
 }
 .modal__inner--lady, .modal__image--lady {
   max-width: 33.5625rem;
+}
+.modal__inner--cafe, .modal__image--cafe {
+  max-width: 59.1875rem;
 }
 
 header {
@@ -786,6 +789,9 @@ header {
 }
 .progress__bar--lady {
   width: 60%;
+}
+.progress__bar--cafe {
+  width: 66.6666666667%;
 }
 
 footer {

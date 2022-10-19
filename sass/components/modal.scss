@@ -43,7 +43,7 @@
 
     &__inner--great-wave,
     &__image--great-wave {
-        max-width: rem(670px);
+        max-width: rem(809px);
     }
 
     &__inner--gypsy,
@@ -54,5 +54,10 @@
     &__inner--lady,
     &__image--lady {
         max-width: rem(537px);
+    }
+
+    &__inner--cafe,
+    &__image--cafe {
+        max-width: rem(947px);
     }
 }
