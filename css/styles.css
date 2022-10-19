@@ -793,6 +793,21 @@ header {
 .progress__bar--cafe {
   width: 66.6666666667%;
 }
+.progress__bar--basket {
+  width: 73.3333333333%;
+}
+.progress__bar--the-boy {
+  width: 80%;
+}
+.progress__bar--arnolfini {
+  width: 86.6666666667%;
+}
+.progress__bar--mona-lisa {
+  width: 93.3333333333%;
+}
+.progress__bar--the-swing {
+  width: 100%;
+}
 
 footer {
   height: 4.5rem;
