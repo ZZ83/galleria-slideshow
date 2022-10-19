@@ -17,6 +17,11 @@
        width: 100%;
        margin: 0 auto;
     }
+
+    &__inner--509,
+    &__image--509 {
+        max-width: rem(509px);
+    }
     
     &__inner--597,
     &__image--597 {
@@ -61,5 +66,15 @@
     &__inner--cafe,
     &__image--cafe {
         max-width: rem(947px);
+    }
+
+    &__inner--basket,
+    &__image--basket {
+        max-width: rem(869px);
+    }
+
+    &__inner--swing,
+    &__image--swing {
+        max-width: rem(585px);
     }
 }

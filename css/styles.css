@@ -532,6 +532,9 @@ strong {
   width: 100%;
   margin: 0 auto;
 }
+.modal__inner--509, .modal__image--509 {
+  max-width: 31.8125rem;
+}
 .modal__inner--597, .modal__image--597 {
   max-width: 37.3125rem;
 }
@@ -558,6 +561,12 @@ strong {
 }
 .modal__inner--cafe, .modal__image--cafe {
   max-width: 59.1875rem;
+}
+.modal__inner--basket, .modal__image--basket {
+  max-width: 54.3125rem;
+}
+.modal__inner--swing, .modal__image--swing {
+  max-width: 36.5625rem;
 }
 
 header {
