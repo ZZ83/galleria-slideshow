@@ -532,6 +532,9 @@ strong {
   width: 100%;
   margin: 0 auto;
 }
+.modal__inner--597, .modal__image--597 {
+  max-width: 37.3125rem;
+}
 .modal__inner--starry, .modal__image--starry {
   max-width: 57.3125rem;
 }
@@ -543,9 +546,6 @@ strong {
 }
 .modal__inner--magdalene, .modal__image--magdalene {
   max-width: 35.8125rem;
-}
-.modal__inner--storm, .modal__image--storm {
-  max-width: 37.3125rem;
 }
 .modal__inner--great-wave, .modal__image--great-wave {
   max-width: 50.5625rem;

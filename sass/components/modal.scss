@@ -17,10 +17,17 @@
        width: 100%;
        margin: 0 auto;
     }
+    
+    &__inner--597,
+    &__image--597 {
+        max-width: rem(597px);
+    }
+
     &__inner--starry,
     &__image--starry {
         max-width: rem(917px);
     }
+
     &__inner--girl,
     &__image--girl {
         max-width: rem(519px);
@@ -34,11 +41,6 @@
     &__inner--magdalene,
     &__image--magdalene {
         max-width: rem(573px);
-    }
-
-    &__inner--storm,
-    &__image--storm {
-        max-width: rem(597px);
     }
 
     &__inner--great-wave,
