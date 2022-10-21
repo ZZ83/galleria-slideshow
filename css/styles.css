@@ -491,6 +491,7 @@ strong {
 
 @media (min-width: 768px) {
   .slideshow-link {
+    cursor: pointer;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     letter-spacing: 0.15625rem;

@@ -9,6 +9,7 @@
 
 .slideshow-link {
     @include mq(medium) {
+        cursor: pointer;
         font-size:      rem(12px);
         line-height:    rem(15px);
         letter-spacing: rem(2.5px);

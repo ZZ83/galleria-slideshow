@@ -1,23 +1,19 @@
-if (document.querySelector(".open-button")) {
-    document.querySelector(".open-button") .addEventListener("click", openModal);
-    document.querySelector(".close-button").addEventListener("click", closeModal);
-}
+const openButton  = document.querySelector(".open-button");
+const closeButton = document.querySelector(".close-button");
 
-function openModal(event) {
-    event.target
+if (openButton) {
+    openButton.addEventListener("click", (event) => {
+        event.target
         .parentElement
         .parentElement
         .parentElement
         .lastElementChild
         .previousElementSibling
         .previousElementSibling.style.display = "flex";
-}
-
-function closeModal(event) {
-    event.target
+    });
+    closeButton.addEventListener("click", (event) => {
+        event.target
         .parentElement
         .parentElement.style.display = "none";
+    });
 }
-
-
-
