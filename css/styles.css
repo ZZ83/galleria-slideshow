@@ -673,6 +673,7 @@ header {
   margin-left: 9%;
   position: absolute;
   bottom: 2rem;
+  pointer-events: none;
 }
 
 .artist {
