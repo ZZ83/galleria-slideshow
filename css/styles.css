@@ -441,7 +441,7 @@ h4 {
   line-height: 1.1875rem;
 }
 
-h5 {
+small {
   color: hsl(0deg, 0%, 100%);
   opacity: 0.75;
   font-weight: 400;
